@@ -143,5 +143,24 @@ function makingHtmlTable (cars){
 
 }
 
+// Get all the buttons
+let buttons = document.querySelectorAll('.t1');
+
+// Get the display
+let display = document.getElementById('display');
+
+// Add event listeners to buttons
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        // If it's the equals button, evaluate the expression
+        if (this.id === 'calculate') {
+            display.textContent = eval(display.textContent);
+        } else {
+            // Otherwise, add the button's text to the display
+            display.textContent += this.textContent;
+        }
+    });
+});
+
 
 makingHtmlTable(cars);

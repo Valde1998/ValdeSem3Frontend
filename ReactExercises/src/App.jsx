@@ -13,7 +13,7 @@ function App() {
   const {firstName, email} = person;
   console.log(...males, ...females);
   console.log(...males,"Kurt", "Helle", ...females, "Tina");
-  const personv2 = {...person, phone: 2275673, friends:[...males, ...females]};
+  const personv2 = {...person, phone: 9275673, friends:[...males, ...females]};
   console.log(personv2);
   const [showJoke, setShowJoke] = useState(false);
 

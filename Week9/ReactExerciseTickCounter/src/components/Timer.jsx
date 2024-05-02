@@ -48,8 +48,6 @@ export default function Timer(){
             interval = setInterval(() => {
                 setTime(prevTime => prevTime - 1);
             }, 1000);
-        } else if (!started && time !== 0){ //If the timer is not started and the time is not 0, we clear the interval.
-            clearInterval(interval);
         } else if(time === 0){
             setStarted(false); //If the time is 0, we stop the timer.
         }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+console.log(window);
 
 function formatTime(totalSeconds) {
     const minutes = Math.floor(totalSeconds / 60);

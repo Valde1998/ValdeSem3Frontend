@@ -11,10 +11,10 @@ const WindowDimensions = () => {
       console.log(`Window resized: ${window.innerWidth}x${window.innerHeight}`);
     };
 
-    // Lyt til resize-hændelser
+    
     window.addEventListener('resize', handleResize);
 
-    // Ryd op ved at fjerne event listener, når komponenten unmountes
+   
     return () => {
       window.removeEventListener('resize', handleResize);
     };

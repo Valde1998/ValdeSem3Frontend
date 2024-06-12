@@ -1,6 +1,6 @@
-// Opret en ny promise
+
 const myPromise = new Promise((resolve, reject) => {
-    // Simuler en asynkron operation (f.eks. en netværksanmodning)
+   
     setTimeout(() => {
       const success = true;
       if (success) {
@@ -11,12 +11,12 @@ const myPromise = new Promise((resolve, reject) => {
     }, 1000);
   });
   
-  // Håndterer promise
+  
   myPromise
     .then((result) => {
-      console.log(result); // "Operationen lykkedes!"
+      console.log(result); 
     })
     .catch((error) => {
-      console.error(error); // "Operationen fejlede!"
+      console.error(error); 
     });
   
